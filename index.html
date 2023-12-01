@@ -1,0 +1,223 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPUT MILESTONE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid d-flex justify-content-center align-items-center mainbd">
+        <div class="d-flex box1 rounded-4">
+            <div class="col-lg-3 col-3 align-self-center ">
+                <img src="https://cdn-icons-png.flaticon.com/128/753/753210.png" alt="" class="img-fluid imglog">
+            </div>
+            <div class=" container-fluid col-lg-9 col-9 d-flex flex-column">
+                <p class="head_form align-self-center">Registration Form</p>
+                <div class="d-flex justify-content-start">
+                    <form onsubmit="funcol()">
+                        <div class="d-flex">
+                            <label for="firstname" class="col-6">First Name:</label>
+                            <input class="col-6" type="text" id="firstname">
+                        </div>
+                        <div class="d-flex">
+                            <label class="col-6" for="secondname">Second Name:</label>
+                            <input type="text" class="col-6" id="lastname">
+                        </div>
+                        <div class="d-flex">
+                            <label for="email" class="col-6">Email:</label>
+                            <input type="text" id="mail" class="col-6">
+                        </div>
+                        <div class="d-flex">
+                            <label class="col-6" for="gender">Gender:</label>
+                            <div class="col-6"><input class="form-check-input" type="radio" name="gender" id="gen" checked>
+                                <label class="form-check-label" for="gender">Male</label><br>
+                                <input class="form-check-input" type="radio" name="gender" id="gen">
+                                <label class="form-check-label" for="gender">Female</label>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <label for="dob" class="col-6">DOB:</label>
+                            <input type="date" id="dob" class="col-6">
+                        </div>
+                        <div class="d-flex">
+                            <label for="address" class="col-6">Address:</label>
+                            <textarea class="col-6" id="addr1" style="height:30px"></textarea>
+                        </div>
+                        <div class="d-flex">
+                            <label for="City" class="col-6">City:</label>
+                            <input type="text" name="" id="city" class="col-6">
+                        </div>
+                        <div class="d-flex">
+                            <label for="State" class="col-6">State:</label>
+                            <input type="text" name="" id="state" class="col-6">
+                        </div>
+                        <div class="d-flex">
+                            <label for="country" class="col-6">Country:</label>
+                            <input type="text" name="" id="country" class="col-6">
+                        </div>
+                        <div class="d-flex">
+                            <label for="phone" class="col-6">Phone:</label>
+                            <input type="number" name="" id="phone" class="col-6">
+                        </div>
+                        <div class="d-flex">
+                            <label for="password" class="col-6">Password:</label>
+                            <input type="password" name="" id="passed" class="col-6">
+                        </div>
+                        <div class="d-flex">
+                            <label for="Confirmpassword" class="col-6">Confirm Password:</label>
+                            <input type="password" name="" id="conpassed" class="col-6">
+                        </div>
+                        <div class="d-flex">
+                            <div class="col-6">
+                                <img src="https://cdn-icons-png.flaticon.com/128/11104/11104255.png" alt=""
+                                style="width: 25%;" />
+                                <label for="git">Link:</label>
+                            </div>
+                            <input class="col-6" type="url" name="" id="git" required>
+                        </div>
+                        <div class="d-flex">
+                            <div class="col-6">
+                                <img src="https://cdn-icons-png.flaticon.com/128/145/145807.png" alt=""
+                                style="width: 25%;" />
+                                <label for="git">Link:</label>
+                            </div>
+                            <input class="col-6" type="url" name="" id="lin" required>
+                        </div>
+                        <div>
+                            <input class="form-check-input" type="checkbox" value="true" id="checker" required>
+                            <label class="form-check-label" for="flexCheckDefault">I Agree</label>
+                        </div>
+                        <div class="mb-3">
+                            <input type="submit" name="" id="sub" class="form-control">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid d-flex justify-content-center"><button type="button" class="btn btn-light" onclick="next()">Show data</button></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script>
+        function funcol(){
+            var firstname=document.getElementById("firstname").value 
+            var lastname=document.getElementById("lastname").value
+            var mail=document.getElementById("mail").value
+            var gen=document.getElementById("gen").value
+            var dob=document.getElementById("dob").value 
+            var addr1=document.getElementById("addr1").value
+            var city=document.getElementById("city").value
+            var state=document.getElementById("state").value
+            var country=document.getElementById("country").value
+            var phone=document.getElementById("phone").value
+            var passed=document.getElementById("passed").value
+            var conpassed=document.getElementById("conpassed").value
+            var git=document.getElementById("git").value
+            var lin=document.getElementsById("lin").value
+            var ckecker=document.getElementById("checker").value
+            const emailRegex = /^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
+            var validate=emailRegex.test(mail);
+            if((firstname=="")||(firstname==null))
+            {
+                alert("Enter First Name")
+            }
+            else if((lastname=="")||(lastname==null))
+            {
+                alert("Enter Second Name")
+            }
+            else if(validate==false)
+            {
+                alert("Enter a valid mail")
+            }
+            else if((addr1=="")||(addr1==null))
+            {
+                alert("kindly provide your address")
+            }
+            else if((city=="")||(city==null))
+            {
+                alert("kindly provide your City")
+            }
+            else if((state=="")||(state==null))
+            {
+                alert("kindly provide your State")
+            }
+            else if((country=="")||(country==null))
+            {
+                alert("kindly provide your State")   
+            }
+            else if((phone.length<10)||(phone.length>10))
+            {
+                alert("kindly provide a valid phone number")
+            }
+            else if((passed.length<8))
+            {
+                alert("Provide strong password")
+            }
+            else if(passed!=conpassed)
+            {
+                alert("Password does not match")
+            }
+            else{
+                alert("Submitted successfully")
+                saver()
+            }
+        }
+            function saver(){
+            var firstname=document.getElementById("firstname").value 
+            var lastname=document.getElementById("lastname").value
+            var mail=document.getElementById("mail").value
+            var gen=document.getElementById("gen").value
+            var dob=document.getElementById("dob").value 
+            var addr1=document.getElementById("addr1").value
+            var city=document.getElementById("city").value
+            var state=document.getElementById("state").value
+            var country=document.getElementById("country").value
+            var phone=document.getElementById("phone").value
+            var passed=document.getElementById("passed").value
+            var conpassed=document.getElementById("conpassed").value
+            var git=document.getElementById("git").value
+            var lin=document.getElementById("lin").value
+            var ckecker=document.getElementById("checker").value
+                var given_data={
+                firstname:firstname,
+                lastname:lastname,
+                mail:mail,
+                gen:gen,
+                dob:dob,
+                addr1:addr1,
+                city:city,
+                state:state,
+                country:country,
+                phone:phone,
+                passed:passed,
+                conpassed:conpassed,
+                git:git,
+                lin:lin
+            } 
+               var inner=localStorage.getItem("locstr")
+               var tojson=inner?JSON.parse(inner):[];
+               tojson.push(given_data)
+               localStorage.setItem("locstr",JSON.stringify(tojson));
+        }
+
+        function next(){
+            window.location.assign("next.html")
+        }
+    </script>
+</body>
+</html>

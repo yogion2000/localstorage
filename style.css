@@ -1,0 +1,28 @@
+.box1{
+    box-shadow: 10px 10px 30px black;
+    background-color: aliceblue;
+    margin-top: 5px;
+}
+.imglog{
+    margin: 0px;
+    padding: 0px;
+    border-radius:17px 0px 0px 17px;
+}   
+.head_form{
+    font-family: 'Russo One', sans-serif;
+}
+label{
+    font-family:'Mooli', sans-serif ;
+}
+input{
+    font-family:'Mooli', sans-serif ;
+}
+*{
+    margin-bottom: 3px;
+}
+body{
+    background-image:url(https://i.pinimg.com/1200x/97/77/23/977723dc2f05e7c30f321f855e010551.jpg);
+}
+button{
+    align-items: center;
+}
